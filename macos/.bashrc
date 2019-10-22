@@ -71,3 +71,6 @@ export GPG_TTY=$(tty);
 
 # Set VS Code as default editor:
 export EDITOR='code --wait'
+
+# Don't clear the screen after quitting a manual page:
+export MANPAGER="less -X"
