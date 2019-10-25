@@ -20,6 +20,22 @@ export PATH="$HOME/bin:$PATH";
 # Opt-out of Homebrew's analytics:
 export HOMEBREW_NO_ANALYTICS=1
 
+# Homebrew’s completions:
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  else
+    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+    done
+  fi
+fi
+
+# Ubuntu’s command-not-found for Homebrew users on macOS:
+# https://github.com/Homebrew/homebrew-command-not-found
+if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
+
 # Groom your app’s Ruby environment with .rbenv
 # https://github.com/rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
