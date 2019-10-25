@@ -17,6 +17,11 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH";
 
+# LS_COLORS by trapd00r
+# https://github.com/trapd00r/LS_COLORS
+command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
+eval "$(gdircolors -b ~/.dircolors)"
+
 # Opt-out of Homebrew's analytics:
 export HOMEBREW_NO_ANALYTICS=1
 
