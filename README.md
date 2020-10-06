@@ -6,12 +6,13 @@ There are many like them, but these ones are mine.
 
 ## Inspiration
 
-* [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
-* [Paul Irish](http://paulirish.com) and his [dotfiles repository](https://github.com/paulirish/dotfiles)
-* [Paul Miller](https://paulmillr.com/) and his [dotfiles repository](https://github.com/paulmillr/dotfiles)
-* [Ben Alman](https://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
-* [Cătălin Mariș](https://github.com/alrra) and his [dotfiles repository](https://github.com/alrra/dotfiles)
-* [Nicolas Gallagher](https://nicolasgallagher.com/) and his [dotfiles repository](https://github.com/necolas/dotfiles)
+- [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
+- [Paul Irish](http://paulirish.com) and his [dotfiles repository](https://github.com/paulirish/dotfiles)
+- [Paul Miller](https://paulmillr.com/) and his [dotfiles repository](https://github.com/paulmillr/dotfiles)
+- [Ben Alman](https://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
+- [Cătălin Mariș](https://github.com/alrra) and his [dotfiles repository](https://github.com/alrra/dotfiles)
+- [Nicolas Gallagher](https://nicolasgallagher.com/) and his [dotfiles repository](https://github.com/necolas/dotfiles)
+- [Matt Banks](https://mattbanks.me/) and his [dotfiles repository](https://github.com/mattbanks/dotfiles)
 
 ## License
 
