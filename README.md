@@ -1,4 +1,4 @@
-# My personal macOS dotfiles
+# My personal dotfiles
 
 There are many like them, but these ones are mine.
 
