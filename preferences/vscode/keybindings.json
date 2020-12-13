@@ -215,5 +215,21 @@
     "command": "type",
     "args": { "text": "…" },
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "type",
+    "args": {
+      "text": "m̐"
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "type",
+    "args": {
+      "text": "M̐"
+    },
+    "when": "editorTextFocus"
   }
 ]
