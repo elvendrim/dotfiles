@@ -38,6 +38,9 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
 # Edit occasionally the hosts file
 alias hosts="sudo $EDITOR /etc/hosts"
 
@@ -64,6 +67,12 @@ alias emptytrash="sudo rm -frv /Volumes/*/.Trashes; \
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# macOS has no `md5sum`, so use `md5` as a fallback
+command -v md5sum > /dev/null || alias md5sum="md5"
+
+# macOS has no `sha1sum`, so use `shasum` as a fallback
+command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # Copy my public key to the pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
