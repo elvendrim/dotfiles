@@ -1,0 +1,176 @@
+# Created by <https://www.gitignore.io/>
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+### Linux ###
+*~
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### Archives ###
+# It's better to unpack these files and commit the raw source because
+# git has its own built in compression methods.
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.tgz
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.cab
+
+# Packing-only formats
+*.iso
+*.tar
+
+# Package management formats
+*.dmg
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+*.msi
+*.msm
+*.msp
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# ~/.gitconfig.local store sensitive information such as the
+# git user credentials
+.gitconfig.local
+
+### VS Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/keybindings.json
+*.code-workspace
+
+### Node ###
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+.env.test
+.env*.local
+
+# Serverless directories
+.serverless/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+### yarn ###
+# <https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored>
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+### LaTeX ###
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
